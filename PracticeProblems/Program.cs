@@ -14,6 +14,22 @@ namespace PracticeProblems
             Console.ReadKey();
         }
 
+        public static string mergeStrings(string a, string b)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < a.Count() + b.Count(); i++)
+            {
+                if (i < a.Count())
+                    sb.Append(a[i]);
+
+                if (i < b.Count())
+                    sb.Append(b[i]);
+            }
+
+            return sb.ToString();
+        }
+
         public static List<string> popularNToys(int numToys,
                                      int topToys,
                                      List<string> toys,
