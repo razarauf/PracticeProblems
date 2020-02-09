@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CellCompete.cs" />
     <Compile Include="GenGCD.cs" />
+    <Compile Include="NumOfPairs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
