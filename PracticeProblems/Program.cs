@@ -14,7 +14,40 @@ namespace PracticeProblems
             Console.ReadKey();
         }
 
-        public static string mergeStrings(string a, string b)
+        public static long WaitingTime3(List<int> tickets, int p)
+        {
+            LinkedList<int> ticketsLL = new LinkedList<int>(tickets.AsEnumerable<int>());
+
+            long stepCounter = 0;
+
+            while (ticketsLL.Count > 0)
+            {
+                if (ticketsLL.First() == 1)
+                {
+                    if (p == 0 && ticketsLL.First() == 1)
+                        return stepCounter + 1;
+                    else
+                        ticketsLL.RemoveFirst();
+                }
+                else
+                {
+                    ticketsLL.AddLast(ticketsLL.First() - 1);
+                    ticketsLL.RemoveFirst();
+                }
+
+                stepCounter++;
+
+                if (p == 0)
+                    p = ticketsLL.Count - 1;
+                else
+                    p--;
+            }
+
+            return stepCounter;
+
+        }
+
+        public static string MergeStrings(string a, string b)
         {
             StringBuilder sb = new StringBuilder();
 
@@ -30,7 +63,7 @@ namespace PracticeProblems
             return sb.ToString();
         }
 
-        public static List<string> popularNToys(int numToys,
+        public static List<string> PopularNToys(int numToys,
                                      int topToys,
                                      List<string> toys,
                                      int numQuotes, List<string> quotes)
