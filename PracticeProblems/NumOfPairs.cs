@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PracticeProblems
+namespace PracticeProblems.Round1
 {
     public class NumOfPairs
     {
-        public static void Main(string[] args)
+        public static void NumOfPairsMain(string[] args)
         {
             //List<KeyValuePair<int, int>> lkvp = new List<KeyValuePair<int, int>>();
 

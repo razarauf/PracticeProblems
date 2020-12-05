@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PracticeProblems
+namespace PracticeProblems.Others
 {
     public static class GenGCD
     {
-        public static void Main(string[] args)
+        public static void GenGCDMain(string[] args)
         {
             // { 2, 4, 6, 8, 10}
             // { 2, 3, 4, 5, 6 }

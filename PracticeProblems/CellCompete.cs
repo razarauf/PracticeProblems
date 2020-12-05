@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PracticeProblems
+namespace PracticeProblems.Round1
 {
     public static class CellCompete
     {
@@ -12,10 +12,10 @@ namespace PracticeProblems
         {
             int[] states = new int[8] { 0, 1, 1, 0, 1, 1, 0, 1 };
 
-            Console.WriteLine(string.Join(",", Main(states, 1)));
+            Console.WriteLine(string.Join(",", CellCompeteMain(states, 1)));
         }
 
-        public static int[] Main(int[] states, int days)
+        public static int[] CellCompeteMain(int[] states, int days)
         {
             // INSERT YOUR CODE HERE
             for (int i = 0; i < days; i++)
