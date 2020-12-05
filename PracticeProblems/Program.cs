@@ -11,6 +11,7 @@ namespace PracticeProblems
         // Test ID: 23280666891875
         public static void Main(string[] args)
         {
+            //...
             Console.ReadKey();
         }
     }
